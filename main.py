@@ -5,7 +5,7 @@ from __future__ import annotations #used to typehint a class that isn't defined 
 from Sudoku_Solver import is_valid_guess, find_next_empty_cell
 import pygame
 import os
-
+clock = pygame.time.Clock()
 
 #constants
 BACKGROUND_COLOR = (255, 255, 255)
@@ -29,7 +29,7 @@ FOOTER_FONT_SIZE = FOOTER_HEIGHT // 2
 
 FONT_FILE_PATH = os.path.join(os.path.dirname(__file__), "CourierPrimeSans.ttf")
 
-ANIMATION_SPEED = 1
+FRAMES_PER_SECOND = 1000
 
 
 class SudokuBoard:
@@ -234,8 +234,8 @@ class SudokuBoard:
                 #update the window
                 self.draw_board()
                 pygame.display.update()
-                pygame.time.delay(ANIMATION_SPEED)
 
+                #recursion
                 if self.auto_solve():
                     return True
 
@@ -325,6 +325,7 @@ def main() -> None:
     #start loop
     run = True
     while run:
+        clock.tick(FRAMES_PER_SECOND)
         for event in pygame.event.get():
             #end loop on close
             if event.type == pygame.QUIT:
