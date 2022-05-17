@@ -212,6 +212,11 @@ class SudokuBoard:
         Returns:
             bool: used for recursion
         """
+        #there is no need to freeze the board as function execute stops the pygame event loop from registering inputs
+        #prevent window from freezing (which occurs from pygame event loop stopping)
+        pygame.event.pump()
+        
+        #deselect cells
         for i in range(9):
             for j in range(9):
                 self.cells[i][j].is_selected = False
