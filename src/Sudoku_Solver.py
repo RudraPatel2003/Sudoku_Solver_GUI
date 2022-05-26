@@ -70,7 +70,7 @@ def find_next_empty_cell(board: list[list[int]]) -> tuple[int, int]:
 
 
 def is_valid_guess(board: list[list[int]], guess: int, row: int, column: int) -> bool:
-    """given an input guess, check if it is valid through the rules of sudoku"""
+    """given an input guess, returns True if it is valid through the rules of Sudoku and False otherwise"""
     #check 1: the same int can not appear in the same row
     for i in range(9):
         if board[row][i] == guess:

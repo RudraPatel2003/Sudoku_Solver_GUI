@@ -63,7 +63,7 @@ class SudokuBoard:
 
   
     def draw_board(self) -> None:
-        """Draws the sudoku board with a background, gridlines, and cells"""
+        """Draws the sudoku board with a background, gridlines, cells, and footer message"""
         #draw background
         self.window.fill(BACKGROUND_COLOR)
 
@@ -209,7 +209,7 @@ class SudokuBoard:
         """Visualizes the sudoku backtracking algorithm as it solves the board for the user
         
         Returns:
-            bool: used for recursion
+            bool: True if the input board is solvable and False otherwise
         """
         #there is no need to freeze the board as function execute stops the pygame event loop from registering inputs
         #prevent window from freezing (which occurs from pygame event loop stopping)
