@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img src="https://raw.githubusercontent.com/RudraPatel2003/Sudoku_Solver_GUI/master/src/logo.PNG">
+    <img src="https://raw.githubusercontent.com/RudraPatel2003/Sudoku_Solver_GUI/main/src/assets/images/Logo.png">
   <br>
   Sudoku Solver GUI
   <br>
@@ -8,11 +8,7 @@
 
 <h2 align="center"> Solve a sudoku board or launch a GUI to play Sudoku and watch the Sudoku backtracking algorithm in action!</h2>
 
-https://raw.githubusercontent.com/RudraPatel2003/rudrapatel/master/src/assets/videos.Sudoku_Video.mp4
-
-# Sudoku_Solver_GUI
-
-This project allows users to interact with the game of Sudoku in two ways. In Sudoku_Solver.py, you can input a board and get a solved version of the board back. In main.py, you can play a game of Sudoku or watch the Sudoku backtracking algorithm solve the board in real time.
+https://user-images.githubusercontent.com/85089368/178647366-ea92747a-1370-474f-ae8b-3d94243d88c2.mp4
 
 ## 🔨 Installation and Usage
 
