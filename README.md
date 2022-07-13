@@ -1,8 +1,20 @@
+<h1 align="center">
+  <br>
+    <img src="https://raw.githubusercontent.com/RudraPatel2003/Sudoku_Solver_GUI/master/src/logo.PNG">
+  <br>
+  Sudoku Solver GUI
+  <br>
+</h1>
+
+<h2 align="center"> Solve a sudoku board or launch a GUI to play Sudoku and watch the Sudoku backtracking algorithm in action!</h2>
+
+https://raw.githubusercontent.com/RudraPatel2003/rudrapatel/master/src/assets/videos.Sudoku_Video.mp4
+
 # Sudoku_Solver_GUI
 
 This project allows users to interact with the game of Sudoku in two ways. In Sudoku_Solver.py, you can input a board and get a solved version of the board back. In main.py, you can play a game of Sudoku or watch the Sudoku backtracking algorithm solve the board in real time.
 
-## Installation Steps
+## 🔨 Installation and Usage
 
 ### 1\. Clone the repository
 ```bash
@@ -23,8 +35,6 @@ Unix/macOS:
 python -m pip install -r requirements.txt
 ```
 
-## Usage
-
 ### Sudoku_Solver.py
 Type in a Sudoku board into the "sudoku_board" variable. Run the program to be printed the original board and the solved version of the board, if one exists.
 
@@ -43,9 +53,9 @@ If an editable cell is selected, there are 3 options:
 
 Press SPACEBAR to watch the Sudoku backtracking algorithm solve the board for you.
 
-## Contributing
+## 🤝 Contributing
 Pull requests are welcome.
 
-## License
+## 📖 License
 
 [MIT](https://choosealicense.com/licenses/mit/)

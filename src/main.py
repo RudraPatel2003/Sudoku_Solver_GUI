@@ -4,12 +4,11 @@ If desired, the user can utilize the sudoku backtracking algorithm to solve the 
 from __future__ import annotations #used to typehint a class that isn't defined yet (see SudokuBoard.deselect_cell())
 from Sudoku_Solver import is_valid_guess, find_next_empty_cell
 import pygame
-import os
 
 #constants
 BACKGROUND_COLOR = (255, 255, 255)
 GRIDLINE_COLOR = (0, 0, 0)
-CELL_FONT_COLOR = (0,0, 0)
+CELL_FONT_COLOR = (0, 0, 0)
 GUESS_FONT_COLOR = (128, 128, 128)
 SELECT_BORDER_COLOR = (255, 0, 0)
 FOOTER_MESSAGE_COLOR = (0, 0, 0)
@@ -26,7 +25,7 @@ CELL_FONT_SIZE = CELL_SIDE_LENGTH // 2
 GUESS_FONT_SIZE = CELL_FONT_SIZE // 2
 FOOTER_FONT_SIZE = FOOTER_HEIGHT // 2
 
-FONT_FILE_PATH = os.path.join(os.path.dirname(__file__), "CourierPrimeSans.ttf")
+FONT_FILE_PATH = "src/assets/fonts/CourierPrimeSans.ttf"
 
 ANIMATION_DELAY = 1 #millisecond
 
